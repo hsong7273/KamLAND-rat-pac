@@ -19,5 +19,5 @@ src/core/config.hh
 .settings
 Notes.md
 setup_rat.sh
-
+.vscode
 
