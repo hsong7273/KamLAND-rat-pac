@@ -471,3 +471,24 @@ SYMBOL: "Fe",
 z: 26,
 a: 55.845,
 }
+
+{
+name: "ELEMENT",
+index: "Xe136",
+valid_begin: [0, 0],
+valid_end: [0, 0],
+
+SYMBOL: "Xe_136",
+z: 54,
+a: 135.90722,
+}
+{
+name: "ELEMENT",
+index: "Xe134",
+valid_begin: [0, 0],
+valid_end: [0, 0],
+
+SYMBOL: "Xe_134",
+z: 54,
+a: 133.90539,
+}

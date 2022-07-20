@@ -253,3 +253,146 @@ rho_edge: [ 67.50 ,	 	67.50, 67.50,  67.50,     25.75, 25.75, 25.75],   // this 
 z_origin: [ -1000000.00,  	0.00,   0.00,  10000.00,  84.50, 0.00],      // and wraps back another 1mm, in reality the photocathode diameter is ~115mm 
 }
 
+
+//#####################################################################################################################
+{						//mask?
+name: "PMT",
+index: "r3600_17inch",	//17-inch pmt, from GLG4_PMT_LogicalVolume.cc
+valid_begin: [0,0],
+valid_end: [0,0],
+
+construction: "toroidal",
+dynode_material: "stainless_steel",
+glass_material: "glass",
+pmt_vacuum_material: "pmt_vacuum", // dilute air
+photocathode_surface: "photocathode_R1408", //get from "Photocathode_opsurf" in KLDetectorConstruction.cc
+mirror_surface: "mirror",			// should use PMT_mirror_kamland
+dynode_surface: "stainless_steel",
+
+//dynode_radius: 94.0, // mm
+dynode_radius: 79.9,
+dynode_top:   -117.0, // mm
+wall_thickness: 2.73, // mm
+
+z_edge:   [ 188.00, 116.71, 0.00, -116.71, -136.05, -195.00, -282.00, -355.00, -370.00, -422.00], 
+rho_edge: [ 0.00, 198.55, 254.00, 198.55, 165.40, 127.00, 127.00, 53.00, 41.35, 41.35], 
+z_origin: [ -127.00, 0.00, 0.00, 127.00, -195.00, -195.00, -280.00, -370.00, -370.00],
+}
+
+{
+name: "PMT",
+index: "r3600_20inch",	//20-inch pmt, from GLG4_PMT_LogicalVolume.cc
+valid_begin: [0,0],
+valid_end: [0,0],
+
+construction: "toroidal",
+dynode_material: "stainless_steel",
+glass_material: "glass",
+pmt_vacuum_material: "pmt_vacuum", // dilute air
+photocathode_surface: "photocathode_R1408", 
+mirror_surface: "mirror",			// should use PMT_mirror_kamland
+dynode_surface: "stainless_steel",
+
+dynode_radius: 94.0, // mm
+dynode_top:   -117.0, // mm
+wall_thickness: 2.73, // mm
+z_edge:   [ 188.00,  116.71,    0.00, -116.71, -136.05, -195.00, -282.00, -355.00, -370.00, -422.00], 
+rho_edge: [ 0.00,  198.55,  254.00,  198.55,  165.40,  127.00,  127.00,   53.00,   41.35,   41.35], 
+z_origin: [ -127.00,    0.00,    0.00,  127.00, -195.00, -195.00, -280.00, -370.00, -370.00],
+}
+
+{
+name: "PMT",
+index: "masked_17inch",	//17-inch pmt, from GLG4_PMT_LogicalVolume.cc
+valid_begin: [0,0],
+valid_end: [0,0],
+
+construction: "toroidal_mask",
+dynode_material: "stainless_steel",
+glass_material: "glass",
+pmt_vacuum_material: "pmt_vacuum", // dilute air
+photocathode_surface: "photocathode_R1408", 
+mirror_surface: "mirror",			// should use PMT_mirror_kamland
+dynode_surface: "stainless_steel",
+
+dynode_radius: 94.0, // mm
+dynode_top:   -117.0, // mm
+wall_thickness: 2.73, // mm
+z_edge:   [ 188.00,  116.71,    0.00, -116.71, -136.05, -195.00, -282.00, -355.00, -370.00, -422.00], 
+rho_edge: [ 0.00,  198.55,  254.00,  198.55,  165.40,  127.00,  127.00,   53.00,   41.35,   41.35], 
+z_origin: [ -127.00,    0.00,    0.00,  127.00, -195.00, -195.00, -280.00, -370.00, -370.00],
+
+needmask20: 1,
+needmask17: 1,
+}
+
+{
+name: "PMT",
+index: "masked_20inch",	//20-inch pmt, from GLG4_PMT_LogicalVolume.cc
+valid_begin: [0,0],
+valid_end: [0,0],
+
+construction: "toroidal_mask",
+dynode_material: "stainless_steel",
+glass_material: "glass",
+pmt_vacuum_material: "pmt_vacuum", // dilute air
+photocathode_surface: "photocathode_R1408", 
+mirror_surface: "mirror",			// should use PMT_mirror_kamland
+dynode_surface: "stainless_steel",
+
+dynode_radius: 94.0, // mm
+dynode_top:   -117.0, // mm
+wall_thickness: 2.73, // mm
+z_edge:   [ 188.00,  116.71,    0.00, -116.71, -136.05, -195.00, -282.00, -355.00, -370.00, -422.00], 
+rho_edge: [ 0.00,  198.55,  254.00,  198.55,  165.40,  127.00,  127.00,   53.00,   41.35,   41.35], 
+z_origin: [ -127.00,    0.00,    0.00,  127.00, -195.00, -195.00, -280.00, -370.00, -370.00],
+
+needmask20: 1,
+}
+
+
+
+{ //no any mask 
+name: "PMT",
+index: "ETI_9372A_5inch",	//5-inch pmt, from GLG4_PMT_LogicalVolume.cc
+valid_begin: [0,0],
+valid_end: [0,0],
+
+construction: "toroidal",
+dynode_material: "stainless_steel",
+glass_material: "glass",
+pmt_vacuum_material: "pmt_vacuum", // dilute air
+photocathode_surface: "photocathode_R1408", 
+mirror_surface: "mirror",			// should use PMT_mirror_kamland
+dynode_surface: "stainless_steel",
+
+dynode_radius: 40.0, // mm
+dynode_top:   -35.0, // mm
+wall_thickness: 2.0, // mm
+z_edge:   [ 50.8, 35.56, 0.00, -35.56, -42.42, -165.1, ], 
+rho_edge: [ 0.00, 45.72, 63.5, 45.72, 42.42, 42.42, ], 
+z_origin: [ -25.40, 0.00, 0.00, -42.42, -165.1, ],
+}
+
+{ //no any mask 
+name: "PMT",
+index: "R5912_8inch",	//8-inch pmt, from GLG4_PMT_LogicalVolume.cc
+valid_begin: [0,0],
+valid_end: [0,0],
+
+construction: "toroidal",
+dynode_material: "stainless_steel",
+glass_material: "glass",
+pmt_vacuum_material: "pmt_vacuum", // dilute air
+photocathode_surface: "photocathode_R1408", 
+mirror_surface: "mirror",			// should use PMT_mirror_kamland
+dynode_surface: "stainless_steel",
+
+dynode_radius: 27.5, // mm
+dynode_top:   -30.0, // mm
+wall_thickness: 3.0, // mm
+z_edge:   [ 75.00, 53.06, 0.00, -53.06, -73.86, -85.00, -215.00, ], 
+rho_edge: [ 0.00, 72.57, 101.00, 72.57, 44.32, 42.00, 42.00, ], 
+z_origin: [ -56.00, 0.00, 0.00, 56.00, -85.00, -215.00, ],
+}
+

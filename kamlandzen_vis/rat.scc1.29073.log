@@ -1,0 +1,316 @@
+RAT, version 
+Status messages enabled: info detail 
+Hostname: scc1 PID: 29073
+Seeding random number generator: 787219780
+DB: Loading /usr2/collab/fuzh/RAT/rat-pac/data/BNL_WLS_MODEL.ratdb ... Success!
+DB: Loading /usr2/collab/fuzh/RAT/rat-pac/data/DAQ.ratdb ... Success!
+DB: Loading /usr2/collab/fuzh/RAT/rat-pac/data/DETECTOR.ratdb ... Success!
+DB: Loading /usr2/collab/fuzh/RAT/rat-pac/data/Decay0.ratdb ... Success!
+DB: Loading /usr2/collab/fuzh/RAT/rat-pac/data/Decay0Backg.ratdb ... Success!
+DB: Loading /usr2/collab/fuzh/RAT/rat-pac/data/ELEMENTS.ratdb ... Success!
+DB: Loading /usr2/collab/fuzh/RAT/rat-pac/data/ESCrossSection.ratdb ... Success!
+DB: Loading /usr2/collab/fuzh/RAT/rat-pac/data/IBD.ratdb ... Success!
+DB: Loading /usr2/collab/fuzh/RAT/rat-pac/data/IO.ratdb ... Success!
+DB: Loading /usr2/collab/fuzh/RAT/rat-pac/data/MATERIALS.ratdb ... Success!
+DB: Loading /usr2/collab/fuzh/RAT/rat-pac/data/MC.ratdb ... Success!
+DB: Loading /usr2/collab/fuzh/RAT/rat-pac/data/NOISE.ratdb ... Success!
+DB: Loading /usr2/collab/fuzh/RAT/rat-pac/data/NTUPLE.ratdb ... Success!
+DB: Loading /usr2/collab/fuzh/RAT/rat-pac/data/OPTICS.ratdb ... Success!
+DB: Loading /usr2/collab/fuzh/RAT/rat-pac/data/PMT.ratdb ... Success!
+DB: Loading /usr2/collab/fuzh/RAT/rat-pac/data/PMTCHARGE.ratdb ... Success!
+DB: Loading /usr2/collab/fuzh/RAT/rat-pac/data/PMTTRANSIT.ratdb ... Success!
+DB: Loading /usr2/collab/fuzh/RAT/rat-pac/data/RUN.ratdb ... Success!
+DB: Loading /usr2/collab/fuzh/RAT/rat-pac/data/SOLAR.ratdb ... Success!
+DB: Loading /usr2/collab/fuzh/RAT/rat-pac/data/SPECTRUM.ratdb ... Success!
+DB: Loading /usr2/collab/fuzh/RAT/rat-pac/data/WIMP.ratdb ... Success!
+
+*************************************************************
+ Geant4 version Name: geant4-10-00-patch-02    (13-June-2014)
+                      Copyright : Geant4 Collaboration
+                      Reference : NIM A 506 (2003), 250-303
+                            WWW : http://cern.ch/geant4
+*************************************************************
+
+<<< Geant4 Physics List simulation engine: Shielding 2.1
+
+Visualization Manager instantiating with verbosity "warnings (3)"...
+Visualization Manager initialising...
+Registering graphics systems...
+
+You have successfully registered the following graphics systems.
+Current available graphics systems are:
+  ASCIITree (ATree)
+  DAWNFILE (DAWNFILE)
+  G4HepRep (HepRepXML)
+  G4HepRepFile (HepRepFile)
+  RayTracer (RayTracer)
+  VRML1FILE (VRML1FILE)
+  VRML2FILE (VRML2FILE)
+
+Registering model factories...
+
+You have successfully registered the following model factories.
+Registered model factories:
+  generic
+  drawByCharge
+  drawByParticleID
+  drawByOriginVolume
+  drawByAttribute
+
+Registered filter factories:
+  chargeFilter
+  particleFilter
+  originVolumeFilter
+  attributeFilter
+
+You have successfully registered the following user vis actions.
+Run Duration User Vis Actions: none
+End of Event User Vis Actions: none
+End of Run User Vis Actions: none
+
+Some /vis commands (optionally) take a string to specify colour.
+Available colours:
+  black, blue, brown, cyan, gray, green, grey, magenta, red, white, yellow
+
+DB: Setting DETECTOR[] experiment to "KamLAND"
+DB: Setting DETECTOR[] geo_file to "KamLAND/kamland_test.geo"
+Loading experiment-specific RATDB files for: KamLAND
+DB: Loading /usr2/collab/fuzh/RAT/rat-pac/data/KamLAND/MATERIALS_KAMLAND.ratdb ... Success!
+DB: Loading /usr2/collab/fuzh/RAT/rat-pac/data/KamLAND/OPTICS_KAMLAND.ratdb ... Success!
+DB: Loading /usr2/collab/fuzh/RAT/rat-pac/data/KamLAND/PMTINFO_17inch.ratdb ... Success!
+DB: Loading /usr2/collab/fuzh/RAT/rat-pac/data/KamLAND/PMTINFO_17less.ratdb ... Success!
+DB: Loading /usr2/collab/fuzh/RAT/rat-pac/data/KamLAND/PMTINFO_20inch.ratdb ... Success!
+DB: Loading /usr2/collab/fuzh/RAT/rat-pac/data/KamLAND/PMTINFO_20less.ratdb ... Success!
+DB: Loading /usr2/collab/fuzh/RAT/rat-pac/data/KamLAND/PMTINFO_8inch.ratdb ... Success!
+DB: Loading /usr2/collab/fuzh/RAT/rat-pac/data/KamLAND/PMTINFO_TSph_17.ratdb ... Success!
+DB: Loading /usr2/collab/fuzh/RAT/rat-pac/data/KamLAND/PMTINFO_TSph_20.ratdb ... Success!
+DB: Loading /usr2/collab/fuzh/RAT/rat-pac/data/KamLAND/PMTINFO_kamland.ratdb ... Success!
+DB: Loading /usr2/collab/fuzh/RAT/rat-pac/data/KamLAND/PMTINFO_kamland_ab.ratdb ... Success!
+DB: Loading /usr2/collab/fuzh/RAT/rat-pac/data/KamLAND/PMTINFO_outer_20inch.ratdb ... Success!
+DB: Loading /usr2/collab/fuzh/RAT/rat-pac/data/KamLAND/PMTINFO_outer_20less.ratdb ... Success!
+DB: Loading /usr2/collab/fuzh/RAT/rat-pac/data/KamLAND/PMTINFO_outer_5inch.ratdb ... Success!
+DetectorConstruction: could not access DETECTOR[].detector_factory
+Loading detector geometry from KamLAND/kamland_test.geo
+Constructing detector materials...
+Loaded material: [AR_coating]
+Loaded material: [EVOH_kamland]
+Loaded material: [MgF2]
+Loaded material: [NaI]
+Loaded material: [PMT_mirror_kamland]
+Loaded material: [Prelude]
+Loaded material: [SNOnorite]
+Loaded material: [TiO2]
+Loaded material: [Xe_scintillator_kamland]
+G4Material::GetMaterial() WARNING: The material: cocktail does not exist in the table. Return NULL pointer.
+[Xe_scintillator_kamland] thrown on construction queue
+Loaded material: [ZnO2]
+Loaded material: [_elementXe]
+Loaded material: [acrylicBlack_kamland]
+Loaded material: [acrylic_SpartechSheet]
+Loaded material: [acrylic_black]
+Loaded material: [acrylic_kamland]
+Loaded material: [acrylic_polycast]
+Loaded material: [acrylic_rpt]
+Loaded material: [acrylic_suvt]
+Loaded material: [acrylic_uva_McMaster]
+Loaded material: [acrylic_uvt]
+Loaded material: [acrylic_uvt_RPT]
+Loaded material: [acrylic_uvt_good]
+Loaded material: [acrylic_white]
+Loaded material: [air]
+Loaded material: [aluminum]
+Loaded material: [borosilicate_glass]
+Loaded material: [cardboard]
+Loaded material: [cocktail]
+G4Material::GetMaterial() WARNING: The material: decane does not exist in the table. Return NULL pointer.
+[cocktail] thrown on construction queue
+Loaded material: [concrete]
+Loaded material: [concrete_chess]
+Loaded material: [concrete_kaplan]
+Loaded material: [concrete_mcnp]
+Loaded material: [copper]
+Loaded material: [cryostat_vacuum]
+Loaded material: [dead_liquid_Ar]
+Loaded material: [dead_liquid_He]
+Loaded material: [dead_liquid_Ne]
+Loaded material: [dead_liquid_Xe]
+Loaded material: [decane]
+Loaded material: [delrin]
+Loaded material: [dodecane]
+Loaded material: [finemet]
+Loaded material: [gd_scintillator]
+G4Material::GetMaterial() WARNING: The material: mineral_oil does not exist in the table. Return NULL pointer.
+[gd_scintillator] thrown on construction queue
+Loaded material: [glass]
+Loaded material: [glass_kamland]
+Loaded material: [hamamatsu_borosilicate_glass]
+Loaded material: [kevlar]
+Loaded material: [lead]
+Loaded material: [liquid_Ar]
+Loaded material: [liquid_He]
+Loaded material: [liquid_Ne]
+Loaded material: [liquid_Xe]
+Loaded material: [mineral_oil]
+Loaded material: [mirror]
+Loaded material: [nylon]
+Loaded material: [optical_grease]
+Loaded material: [pen]
+Loaded material: [pet]
+Loaded material: [photocathode]
+Loaded material: [photocathode_R11065]
+Loaded material: [photocathode_R11780]
+Loaded material: [photocathode_R1408]
+Loaded material: [photocathode_R5912_HQE]
+Loaded material: [photocathode_R7081_hqe]
+Loaded material: [photocathode_et9390b]
+Loaded material: [pmt_vacuum]
+Loaded material: [polyethylene]
+Loaded material: [polypropylene]
+Loaded material: [polystyrene_foam]
+Loaded material: [ppo]
+Loaded material: [pseudocumene]
+Loaded material: [ptfe]
+Loaded material: [ptfe_fabric]
+Loaded material: [pvc]
+Loaded material: [quartz]
+Loaded material: [rock]
+Loaded material: [salt_water]
+Loaded material: [sapphire]
+Loaded material: [scintillator]
+Loaded material: [scintillator_kamland]
+Loaded material: [stainless_steel]
+Loaded material: [stainless_steel_316L]
+Loaded material: [steel]
+Loaded material: [styrofoam]
+Loaded material: [tungsten]
+Loaded material: [tungsten_alloy]
+Loaded material: [tyvek]
+Loaded material: [vikuiti_esr]
+Loaded material: [water]
+queue (pass1): [Xe_scintillator_kamland]
+G4Material::GetMaterial() WARNING: The material: cocktail does not exist in the table. Return NULL pointer.
+queue (pass1): [cocktail]
+[cocktail] found and removed from construction queue
+queue (pass1): [gd_scintillator]
+[gd_scintillator] found and removed from construction queue
+Not all materials were found in the database. Trying to load them from NIST.
+queue (pass2): [Xe_scintillator_kamland]
+[Xe_scintillator_kamland] found and removed from construction queue
+Loading optics: AR_coating
+Loading optics: MgF2
+Loading optics: PMT_mirror_kamland
+Loading optics: TiO2
+Loading optics: Xe_scintillator_kamland
+Loading optics: ZnO2
+Loading optics: acrylicBlack_kamland
+Loading optics: acrylic_SpartechSheet
+Loading optics: acrylic_black
+Loading optics: acrylic_kamland
+Loading optics: acrylic_polycast
+Loading optics: acrylic_rpt
+Loading optics: acrylic_suvt
+Loading optics: acrylic_uva_McMaster
+Loading optics: acrylic_uvt
+Loading optics: acrylic_uvt_RPT
+Loading optics: acrylic_uvt_good
+Loading optics: acrylic_white
+Loading optics: air
+Loading optics: aluminum
+Loading optics: copper
+Loading optics: cryostat_vacuum
+Loading optics: gd_scintillator
+Loading optics: glass
+Loading optics: glass_kamland
+Loading optics: kevlar
+Loading optics: mineral_oil
+Loading optics: mirror
+Loading optics: nylon
+Loading optics: optical_grease
+Loading optics: photocathode
+Loading optics: photocathode_R11065
+Loading optics: photocathode_R11780
+Loading optics: photocathode_R1408
+Loading optics: photocathode_et9390b
+Loading optics: pmt_vacuum
+Loading optics: polyethylene
+Loading optics: pseudocumene
+Loading optics: ptfe
+Loading optics: ptfe_fabric
+Loading optics: quartz
+Loading optics: salt_water
+Loading optics: sapphire
+Loading optics: scintillator
+Loading optics: scintillator_kamland
+Loading optics: stainless_steel
+Loading optics: stainless_steel_316L
+Loading optics: styrofoam
+Loading optics: tyvek
+Loading optics: water
+Registering box
+Registering tube
+Registering torus
+Registering sphere
+Registering reflector
+Registering reflector_waveguide
+Registering pmtarray
+Registering pmtcoverage
+Registering waterboxarray
+Registering bubble
+Registering ptube
+Registering psphere
+Registering revarray
+Registering tubearray
+Registering revolve
+Registering revolveChimney
+Registering lens
+Registering polygon
+Registering border
+Registering convexlens
+Registering tubeinter
+Registering perfbox
+Registering cut_tube
+Registering watchmanshield
+Registering toroidal
+Registering torusarray
+GeoSolidFactory: Constructing volume world
+PMTArrayFactory: Constructing volume pmts
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomSolids1001
+      issued by : G4CutTubs::G4CutTubs()
+Inexisting Low/High Normal to Z plane or Parallel to Z.
+Normals to Z plane are ((0,0,-1) and (0,0,1)) in solid: pmts_dynode_solidShould use G4Tubs!
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomSolids1001
+      issued by : G4CutTubs::G4CutTubs()
+Inexisting Low/High Normal to Z plane or Parallel to Z.
+Normals to Z plane are ((0,0,-1) and (0,0,1)) in solid: pmts_central_gap_solidShould use G4Tubs!
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomSolids1001
+      issued by : G4CutTubs::G4CutTubs()
+Inexisting Low/High Normal to Z plane or Parallel to Z.
+Normals to Z plane are ((0,0,-1) and (0,0,1)) in solid: pmts_mask20_solidShould use G4Tubs!
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- EEEE ------- G4Exception-START -------- EEEE -------
+*** G4Exception : Invalid Parameter
+      issued by : src/geo/GLG4TorusStack.cc
+Error in GLG4TorusStack::SetAllParameters - z_edge[] must be ordered!
+*** Fatal Exception *** core dump ***
+-------- EEEE -------- G4Exception-END --------- EEEE -------
+
+
+*** G4Exception: Aborting execution ***

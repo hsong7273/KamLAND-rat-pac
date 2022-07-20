@@ -25,7 +25,19 @@ public:
 
   /** ID number */
   virtual Int_t GetID() const { return id; };
-  virtual void SetID(Int_t _id) { id = _id; };
+  // virtual void SetID(Int_t _id) { id = _id; };
+  virtual void SetID(Int_t _id) { //Mo changed. This is only for KamLAND
+    if(_id < 6)
+      id = _id + 2104;
+    else if(_id > 6 && _id < 14)
+      id = _id + 2110 - 6; 
+    else if(_id >= 14 && _id < 22)
+      id = _id + 2118 - 14;
+    else if(_id >= 22 && _id < 247 )
+      id = _id + 1879 - 22;
+    else if (_id >= 247)
+      id = _id - 247;   
+  };
 
   /** Charge */
   virtual Float_t GetCharge() const;

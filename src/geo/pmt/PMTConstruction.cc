@@ -11,6 +11,7 @@
 #include <G4LogicalSkinSurface.hh>
 
 #include <RAT/ToroidalPMTConstruction.hh>
+#include <RAT/ToroidalPMTConstructionMask.hh>
 #include <RAT/RevolutionPMTConstruction.hh>
 
 using namespace std;
@@ -25,6 +26,8 @@ PMTConstruction* PMTConstruction::NewConstruction(DBLinkPtr table, G4LogicalVolu
         return new RevolutionPMTConstruction(table,mother);
     } else if (construction == "cubic") {
         Log::Die("Cubic PMTs are not yet implemented!");
+    } else if (construction == "toroidal_mask") {
+        return new ToroidalPMTConstructionMask(table,mother);
     }
     return NULL;
 }

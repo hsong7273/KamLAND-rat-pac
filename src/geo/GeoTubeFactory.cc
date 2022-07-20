@@ -1,5 +1,6 @@
 #include <RAT/GeoTubeFactory.hh>
 #include <G4Tubs.hh>
+#include <G4CutTubs.hh>
 #include <CLHEP/Units/SystemOfUnits.h>
 #include <CLHEP/Units/PhysicalConstants.h>
 
@@ -25,9 +26,16 @@ G4VSolid *GeoTubeFactory::ConstructSolid(DBLinkPtr table)
   catch (DBNotFoundError &e) { };
 
 
-  return new G4Tubs(volume_name,
-		    r_min, r_max, size_z,
-		    phi_start, phi_delta);
+  // return new G4Tubs(volume_name,
+		//     r_min, r_max, size_z,
+		//     phi_start, phi_delta);
+
+  G4ThreeVector low_norm = G4ThreeVector( 0.0, 0.0, -1.0);
+  G4ThreeVector high_norm = G4ThreeVector( 0.0, 0.0, 1.0);
+  return new G4CutTubs(volume_name,
+        r_min, r_max, size_z,
+        phi_start, phi_delta,
+        low_norm, high_norm);
 }
 
 } // namespace RAT

@@ -1,0 +1,81 @@
+{
+name: "MATERIAL",
+index: "polyethylene",
+valid_begin : [0, 0],
+valid_end : [0, 0],
+density: 0.91,
+nelements: 2, 
+nmaterials: 0,
+elements: ["Carbon", "Hydrogen"],
+elemprop: [0.333333,0.666667],
+}
+
+{
+name: "MATERIAL",
+index: "PMT_mirror_kamland",
+valid_begin : [0, 0],
+valid_end : [0, 0],
+density: 5.0,
+nelements: 1,
+nmaterials: 0,
+elements: ["Aluminum"],
+elemprop: [1.0],
+}
+
+{
+name: "MATERIAL",
+index: "acrylic_kamland",
+valid_begin : [0, 0],
+valid_end : [0, 0],
+density: 1.14,
+nelements: 3,
+nmaterials: 0,
+elements: ["Hydrogen", "Carbon", "Oxygen"],
+elemprop: [0.0703, 0.558, 0.3717],
+}
+
+{
+name: "MATERIAL",
+index: "scintillator_kamland",
+valid_begin : [0, 0],
+valid_end : [0, 0],
+density: 0.78,
+nelements: 0,
+nmaterials: 3,
+materials: ["mineral_oil", "pseudocumene", "ppo"],
+matprop: [0.800604, 0.197655, 0.001741],	//from KLDetectorConstruction.cc
+}
+
+{
+name: "MATERIAL",
+index: "glass_kamland",
+valid_begin : [0, 0],
+valid_end : [0, 0],
+density: 2.2,
+nelements: 2,
+nmaterials: 0,
+elements: ["Silicon", "Oxygen"],
+elemprop: [0.4675, 0.5325],
+}
+
+{
+name: "MATERIAL",
+index: "EVOH_kamland",
+valid_begin : [0, 0],
+valid_end : [0, 0],
+density: 1.15,
+nelements: 3, 
+nmaterials: 0,
+elements: ["Hydrogen", "Carbon", "Oxygen"],
+elemprop: [0.111838, 0.666260, 0.221902],
+}
+
+
+
+
+
+
+
+
+
+

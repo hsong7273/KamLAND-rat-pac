@@ -1,0 +1,51 @@
+/glg4debug/glg4param omit_muon_processes  1.0
+/glg4debug/glg4param omit_hadronic_processes 1.0 
+
+#set the detector parameters
+/rat/db/set DETECTOR experiment "KamLAND"
+#/rat/db/set DETECTOR experiment "sphere"
+
+#/rat/db/set DETECTOR geo_file "KamLAND/kamland_truesphere_simp.geo"
+#/rat/db/set DETECTOR geo_file "KamLAND/kamland_process.geo"
+/rat/db/set DETECTOR geo_file "KamLAND/kamland_real.geo"
+#/rat/db/set DETECTOR geo_file "sphere/sphere.geo"
+
+/run/initialize
+/tracking/storeTrajectory 0
+
+# BEGIN EVENT LOOP
+/rat/proc simpledaq
+/rat/proc count
+/rat/procset update 10
+/rat/proc fitcentroid	
+/rat/proclast outroot	
+
+# 0vbb
+#/generator/add combo dbeta:fill:poisson
+#/generator/dbeta/isotope Xe136	# Isotope: Xe136, Te130, Te128, Cd116
+#/generator/dbeta/is0nbb true 	# true for 0nbb, false for 2nbb
+#/generator/vtx/set 0 0 0
+#/generator/pos/set 0 0 3000
+#/run/beamOn 100
+
+# electrons/gamma
+/generator/add combo gun:fill:poisson
+#/generator/vtx/set e- 0 0 0 1.0
+/generator/vtx/set gamma 0 0 0 2.22325
+/generator/pos/set 0 0 0
+/generator/rate/set 10.0
+/run/beamOn 100
+
+# 0vbb_fill		# for filled volume
+#/generator/add combo decay0:fill:poisson
+#/generator/vtx/set 2beta Xe136 0 1
+#/generator/pos/set 0 0 3000
+#/generator/rate/set 1
+#/run/beamOn 1
+
+#END EVENT LOOP
+
+
+
+
+

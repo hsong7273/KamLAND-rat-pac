@@ -1,0 +1,35 @@
+/glg4debug/glg4param omit_muon_processes  1.0
+/glg4debug/glg4param omit_hadronic_processes 1.0 
+
+#set the detector parameters
+/rat/db/set DETECTOR experiment "KamLAND"
+#/rat/db/set DETECTOR geo_file "KamLAND/kamland_real_lessPMTs.geo"
+/rat/db/set DETECTOR geo_file "KamLAND/kamland_test.geo"
+
+/run/initialize
+
+#initialize the visualizer
+#/vis/open OGLSXm
+/vis/open HepRepFile
+#/vis/open OGL 600x600-0+0
+/vis/scene/create
+/vis/scene/add/volume
+/vis/scene/add/trajectories
+/vis/scene/endOfEventAction accumulate
+/vis/drawVolume
+
+/vis/viewer/set/viewpointVector 0.0 1 0.0
+/vis/viewer/zoom 1.75
+/vis/viewer/set/upVector 0 1 0
+
+/tracking/storeTrajectory 1
+
+# BEGIN EVENT LOOP
+
+#END EVENT LOOP
+/vis/scene/add/hits
+/vis/scene/notifyHandlers
+
+/vis/viewer/refresh
+#/vis/viewer/flush
+

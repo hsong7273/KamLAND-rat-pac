@@ -13,6 +13,7 @@
 #include <RAT/GLG4VertexGen.hh>
 #include <RAT/VertexGen_IBD.hh>
 #include <RAT/VertexGen_ReacIBD.hh>
+#include <RAT/VertexGen_DBeta.hh>
 #include <RAT/VertexGen_Decay0.hh>
 #include <RAT/Gen_LED.hh>
 #include <RAT/VertexGen_ES.hh>
@@ -22,6 +23,7 @@
 #include <RAT/VertexFile_Gen.hh>
 #include <RAT/CfGen.hh>
 #include <RAT/ReacIBDgen.hh>
+#include <RAT/DBetagen.hh>
 #include <RAT/EventInfo.hh>
 #include <RAT/TrackInfo.hh>
 #include <RAT/PrimaryVertexInformation.hh>
@@ -112,6 +114,9 @@ void Gsim::Init() {
   GlobalFactory<GLG4VertexGen>::Register("decay0",
                                          new Alloc<GLG4VertexGen,
                                          VertexGen_Decay0>);
+  GlobalFactory<GLG4VertexGen>::Register("dbeta",
+                                         new Alloc<GLG4VertexGen,
+                                         VertexGen_DBeta>);
 
   GlobalFactory<GLG4Gen>::Register("decaychain",
                                    new Alloc<GLG4Gen,DecayChain_Gen>);
